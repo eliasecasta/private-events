@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   resources :users
 
   get '/sign_in', to: 'users#sign_in'
