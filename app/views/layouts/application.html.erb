@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <div class="users-session">
+      <% if current_user %>
+        <h4>Signed In: <%= current_user.name %></h4>
+        <%= link_to 'Sign Out', sign_out_path %>
+      <% end %>
+    </div>
+
     <%= yield %>
   </body>
 </html>
