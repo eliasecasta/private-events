@@ -30,3 +30,6 @@
         - user_id: 7
         - user_id: 8
         - user_id: 10
+
+### Attendee
+    - attended_event(event_id)

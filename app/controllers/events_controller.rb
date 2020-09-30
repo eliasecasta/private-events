@@ -19,8 +19,7 @@ class EventsController < ApplicationController
   end
 
   # GET /events/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /events
   # POST /events.json
@@ -30,6 +29,7 @@ class EventsController < ApplicationController
     else
       @event = current_user.events.build(event_params)
       @event.save
+
       redirect_to event_path(@event)
     end
   end

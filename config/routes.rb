@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :events
   resources :users
+  resources :events
 
   get '/sign_in', to: 'users#sign_in'
   post '/sign_in', to: 'users#create_user_session'
