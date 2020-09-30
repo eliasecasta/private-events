@@ -73,8 +73,7 @@ class UsersController < ApplicationController
     @user = User.find_by_email(params[:user][:email])
     if !@user.nil?
       session[:current_user_id] = @user.id
-      # TODO : FIX
-      redirect_to users_path
+      redirect_to events_path
     else
       render 'sign_in'
     end
@@ -82,7 +81,6 @@ class UsersController < ApplicationController
 
   def destroy_user_session
     session[:current_user_id] = nil
-    # TODO : FIX
     redirect_to users_path
   end
 

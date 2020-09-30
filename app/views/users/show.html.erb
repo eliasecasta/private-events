@@ -10,5 +10,10 @@
   <%= @user.email %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+<h3>Events created by <%= @user.name %> </h3>
+
+<ul>
+<%= render partial: "events", collection: list_events, as: :event %>
+</ul>
+
 <%= link_to 'Back', users_path %>
