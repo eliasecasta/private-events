@@ -28,6 +28,10 @@ class EventsController < ApplicationController
       redirect_to sign_in_path
     else
       @event = current_user.events.build(event_params)
+      @attendees = params[:attendees].each do | attendee|
+        af = User.find(attendee)
+        EventAttendance.create(user: af, event: @event)
+      end
       @event.save
 
       redirect_to event_path(@event)
