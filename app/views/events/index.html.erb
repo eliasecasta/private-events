@@ -3,7 +3,7 @@
 <h1>Events</h1>
 <br>
 
-    <h1>Future Events</h1>
+<h1>Future Events</h1>
 
 <table style="width: 100%">
   <thead>
@@ -17,14 +17,12 @@
   </thead>
 
   <tbody>
-      <%= render partial: "users/event", collection: Event.upcoming, as: :event %>
+    <%= render partial: 'event', collection: Event.upcoming, as: :event %>
   </tbody>
-
 </table>
 
+<h1>Past events</h1>
 
-    <h1>Past events</h1>
-<br>
 <table style="width: 100%">
   <thead>
     <tr>
@@ -37,11 +35,8 @@
   </thead>
 
   <tbody>
-     <%= render partial: "users/event", collection: Event.previous, as: :event %>
+    <%= render partial: 'event', collection: Event.previous, as: :event %>
   </tbody>
-
 </table>
-
-
 
 <%= link_to 'New Event', new_event_path %>
