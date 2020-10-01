@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :users
   resources :events
 
-  root 'users#sign_in'
+  root 'users#new'
 
   get '/sign_in', to: 'users#sign_in'
   post '/sign_in', to: 'users#create_user_session'

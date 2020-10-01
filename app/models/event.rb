@@ -7,18 +7,11 @@ class Event < ApplicationRecord
   include UsersHelper
   belongs_to :creator, class_name: 'User', foreign_key: 'user_id'
 
-
   # Many-To-Many, Event Has Many Users
   has_many :event_attendances
   has_many :attendee, through: :event_attendances, source: 'user'
 
-  # def self.previous
-  #   grouped_by_date[:previous]
-  # end
-
-  # def self.upcoming
-  #   grouped_by_date[:upcoming]
-  # end
+  validates :title, :description, presence: true
 
   def self.grouped_by_date
 

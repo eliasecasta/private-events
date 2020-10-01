@@ -1,7 +1,9 @@
 module UsersHelper
   def current_user
     user_id = session[:current_user_id]
-    user_id ? User.find(user_id) : nil
+    user = User.find_by(id: user_id)
+
+    user ? user : nil
   end
 
   def list_events
