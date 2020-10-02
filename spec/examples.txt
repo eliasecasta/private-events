@@ -1,6 +1,9 @@
-example_id                                    | status | run_time        |
---------------------------------------------- | ------ | --------------- |
-./spec/models/event_attendance_spec.rb[1:1:1] | passed | 1.52 seconds    |
-./spec/models/event_spec.rb[1:1:1]            | passed | 0.01626 seconds |
-./spec/models/user_spec.rb[1:1:1]             | passed | 0.04091 seconds |
-./spec/views/page_content_spec.rb[1:1:1]      | failed | 0.34386 seconds |
+example_id                                                   | status | run_time        |
+------------------------------------------------------------ | ------ | --------------- |
+./spec/features/new_visitor_sign_up_and_create_event.rb[1:1] | passed | 0.12791 seconds |
+./spec/features/new_visitor_sign_up_and_create_event.rb[1:2] | passed | 0.93613 seconds |
+./spec/models/event_attendance_spec.rb[1:1:1]                | passed | 0.041 seconds   |
+./spec/models/event_spec.rb[1:1:1]                           | passed | 0.02046 seconds |
+./spec/models/user_spec.rb[1:1:1]                            | passed | 0.14182 seconds |
+./spec/views/root_spec.rb[1:1:1]                             | passed | 1.82 seconds    |
+./spec/views/sign_in_spec.rb[1:1]                            | passed | 0.36973 seconds |
