@@ -6,8 +6,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/e71az/private-events">
+  <a href="https://github.com/e71az/private-events" style="text-decoration: none;">
+  <figure align="center">
     <img src="app/assets/images/reserved.jpg" alt="Reserved logo" width="300" height="200">
+    <figcaption>Creator: Andrew Bayda</figcaption>
+  </figure>
   </a>
 
   <h2 align="center">Private Events Project</h2>
