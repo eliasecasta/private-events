@@ -102,4 +102,3 @@ RSpec.configure do |config|
   Capybara.javascript_driver = :headless_chrome
 end
 # rubocop:enable all
-
