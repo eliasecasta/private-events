@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/e71az/private-events">
-    <img src="app/assets/images/reserved.jpg" alt="Reserved logo" width="200" height="200">
+    <img src="app/assets/images/reserved.jpg" alt="Reserved logo" width="300" height="200">
   </a>
 
   <h2 align="center">Private Events Project</h2>
