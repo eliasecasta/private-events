@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  include UsersHelper
   before_action :set_user, only: %i[show edit update destroy]
 
   # GET /users
@@ -10,8 +11,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @events_previous = Event.previous
-    @events_upcoming = Event.upcoming
+    @events_previous = Event.previous.select { |event| event.user_id == current_user&.id }
+    @events_upcoming = Event.upcoming.select { |event| event.user_id == current_user&.id }
   end
 
   # GET /users/new
