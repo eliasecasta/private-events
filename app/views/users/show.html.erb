@@ -13,11 +13,11 @@
 <h3>Events created by <%= @user.name %> </h3>
 
 <h4>Upcoming:</h4>
-<ul><%= render partial: "events/event", collection: Event.upcoming, as: :event %></ul>
+<ul><%= render partial: "events/event", collection: @events_upcoming, as: :event %></ul>
 
 <hr>
 
 <h4>Previous:</h4>
-<ul><%= render partial: "events/event", collection: Event.previous, as: :event %></ul>
+<ul><%= render partial: "events/event", collection: @events_previous, as: :event %></ul>
 
 <%= link_to 'Back', users_path %>
