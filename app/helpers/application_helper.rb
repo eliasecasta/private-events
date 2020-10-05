@@ -12,9 +12,9 @@ module ApplicationHelper
       end
     end
   end
-
+# rubocop:disable Lint/Void
   def show_errors(object)
-    if object.errors.any?
+    return unless object.errors.any?
       content_tag 'div', id: 'error_explanation' do
         pluralize(object.errors.count, 'error')
         flash.now[:notice] = 'Prohibited this object from being saved'
@@ -26,3 +26,5 @@ module ApplicationHelper
     end
   end
 end
+
+# rubocop:enable Lint/Void
