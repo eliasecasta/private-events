@@ -9,7 +9,7 @@
   <a href="https://github.com/e71az/private-events" style="text-decoration: none;">
   <figure align="center">
     <img src="app/assets/images/reserved.jpg" alt="Reserved logo" width="300" height="200">
-    <figcaption>Creator: Andrew Bayda</figcaption>
+    <figcaption>Photo by: Andrew Bayda</figcaption>
   </figure>
   </a>
 
