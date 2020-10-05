@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: bundle install && yarn install
+
+vscode:
+  extensions:
+    - bung87.rails@0.16.7:IXQaE7PUhn9K+2iTc/HF1w==
+    - bung87.vscode-gemfile@0.4.1:jYT6FRuH8C+Y+pBqaSL8BA==
+    - castwide.solargraph@0.22.0:gbvTA8wx5YQV2KluDIFp0w==
+    - wingrunr21.vscode-ruby@0.27.0:beIqQUhLRuJ5Vao4B2Lyng==
+    - rebornix.ruby@0.27.0:QyGBeRyslOfdRgOPRGm6PQ==
+    - sianglim.slim@0.1.1:NQFS+52G0SH0/fp66K9i6g==
+    - karunamurti.haml@1.3.1:EDy7DPmRjp+lAkYNmcAmLA==
