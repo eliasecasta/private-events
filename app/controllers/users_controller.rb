@@ -9,7 +9,10 @@ class UsersController < ApplicationController
 
   # GET /users/1
   # GET /users/1.json
-  def show; end
+  def show
+    @events_previous = Event.previous
+    @events_upcoming = Event.upcoming
+  end
 
   # GET /users/new
   def new
