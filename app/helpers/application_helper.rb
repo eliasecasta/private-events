@@ -12,4 +12,17 @@ module ApplicationHelper
       end
     end
   end
+
+  def show_errors(object)
+    if object.errors.any?
+      content_tag 'div', id: 'error_explanation' do
+        pluralize(object.errors.count, 'error')
+        flash.now[:notice] = 'Prohibited this object from being saved'
+
+        object.errors.full_messages.each do |message|
+          message
+        end
+      end
+    end
+  end
 end
