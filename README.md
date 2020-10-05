@@ -7,10 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/e71az/private-events" style="text-decoration: none;">
-  <figure align="center">
-    <img src="app/assets/images/reserved.jpg" alt="Reserved logo" width="300" height="200">
-    <figcaption>Photo by: Andrew Bayda</figcaption>
-  </figure>
+    <img src="app/assets/images/reserved.jpg" alt="Reserved logo" width="300" height="200" align="center">
   </a>
 
   <h2 align="center">Private Events Project</h2>
