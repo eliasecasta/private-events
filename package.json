@@ -10,7 +10,6 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "chromium": "^3.0.2",
     "webpack-dev-server": "^3.11.0"
   }
 }
