@@ -6,8 +6,8 @@ class Event < ApplicationRecord
   has_many :event_attendances
   has_many :attendee, through: :event_attendances, source: 'user'
 
-  validates :title, :description, presence: true
+  validates_presence_of :title, :description, on: :create, message: "can't be blank"
 
-  scope :upcoming, -> { where('date > ?', Time.now) }
+  scope :upcoming, -> { where('date >= ?', Time.now) }
   scope :previous, -> { where('date < ?', Time.now) }
 end

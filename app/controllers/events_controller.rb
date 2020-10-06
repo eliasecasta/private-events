@@ -38,11 +38,12 @@ class EventsController < ApplicationController
         EventAttendance.create(user: User.find(attendee), event: @event)
       end
 
-      if @event.valid?
-        @event.save
-        redirect_to event_path(@event)
-      else
-        redirect_to new_event_path
+      respond_to do |format|
+        if @event.save
+          format.html { redirect_to @event, notice: 'Event was successfully created.' }
+        else
+          format.html { render :new }
+        end
       end
 
     end
