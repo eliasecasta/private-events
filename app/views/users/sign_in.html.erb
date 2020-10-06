@@ -1,0 +1,8 @@
+<h1>Sign In</h1>
+
+<%= form_for :user, url: '/sign_in' do |f| %>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+
+  <%= f.submit 'Sign In!' %>
+<% end %>

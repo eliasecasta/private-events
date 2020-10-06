@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PrivateEvents</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <% flash.each do |type, msg| %>
+     <div class="alert alert-info">
+      <%= msg %>
+     </div>
+    <% end %>
+    <%= link_to 'All Events', events_path %>
+    <%= link_to 'Users', users_path %>
+    <%= users_session %>
+    <%= yield %>
+  </body>
+</html>

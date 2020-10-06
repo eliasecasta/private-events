@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event Creator:</strong>
+  <%= @event.creator.name %>
+</p>
+
+<h4>Attendees: </h4>
+<ul>
+  <%= render partial: 'attendee', collection: @event.attendee, as: :attendee %>
+</ul>
+
+<%= link_to 'Back', events_path %>

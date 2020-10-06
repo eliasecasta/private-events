@@ -1,0 +1,36 @@
+<%= form_for @event do |form| %>
+  <p class="error">
+    <%= show_errors(@event) %>
+  </p>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :attendees, 'Who do you want to invite?' %>
+    <%= select_tag 'attendees', options_from_collection_for_select(User.all, :id, :name), multiple: true %>
+  </div>
+
+  <br>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
